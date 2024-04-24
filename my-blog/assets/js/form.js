@@ -14,7 +14,7 @@ submitButton.onclick = function() {
 
     if (username && title){
         localStorage.setItem(username, title);
-        
+        location.href="blog.html"
        
     }
 }
