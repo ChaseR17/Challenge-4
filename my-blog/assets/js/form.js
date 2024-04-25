@@ -13,7 +13,8 @@ submitButton.onclick = function() {
     console.log(content);
 
     if (username && title){
-        localStorage.setItem(username, title);
+        //localStorage.clear();
+        localStorage.setItem(username, [title, content]);
         location.href="blog.html"
     } else {
         showAlert();
