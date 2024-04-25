@@ -15,6 +15,13 @@ submitButton.onclick = function() {
     if (username && title){
         localStorage.setItem(username, title);
         location.href="blog.html"
-       
+    } else {
+        showAlert();
+    }
+    
+    function showAlert() {
+        alert("Please fill out all the info!");
     }
 }
+
+// Step 1 add a prompt that tells me that i need to fill out all of the info if i hit submit without filling out boxes
